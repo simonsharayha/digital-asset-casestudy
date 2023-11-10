@@ -83,6 +83,14 @@ font-family: 'Lato', sans-serif;
 	color:#1f2a38 ;
 }
 
+.readmore {
+	font-size: 15;
+	display: block;
+	padding: 2rem 0;
+	text-decoration: none;
+	color: var(--dark-blue);
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
