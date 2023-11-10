@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+:root {
+	--black:#1f2a38;
+	--blue:#a6f6ff;
+	--dark-blue:#1247D9;
+	--light-blue:#577FF1;
+	--offwhite:#F7F9FC;
+}
+
+
+html {
+	box-sizing:border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing:inherit;
+}
+
+
+
+body{
+	width:900px;
+	padding: 60px 60px;
+}
+
+h1, h2, h3, h4, h5 {
+	color:var(--black);
+}
+
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 26px;
+}
+
+
+
+h1,h2,h3,h4,h5,p,body,a { 
+font-family: 'Lato', sans-serif;
+}
+
+.heading--block{
+	max-width:600px;
+}
+
+
+
+.heading--block--body {
+	font-size: 16px;
+	line-height: 26px;
+	color: #525252;
+
+}
+
+.header--image {
+	max-width: 600px;
+}
+
+
+.button {
+	background-color: #a6f6ff;
+	border:0;
+	padding: 1rem 2rem;
+	font-size: 9px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	text-decoration: none;
+	color:#1f2a38 ;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+
+ .for-preview {
+ 	width: 535px;
+ }
+
+  .for-preview-h2 {
+ 	width: 235px;
+ }
