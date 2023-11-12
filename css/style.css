@@ -36,6 +36,7 @@ p {
 h1, h2, h3, h4, h5 {
 	color:var(--black);
 	font-weight: 700;
+	line-height: 1.2em;
 }
 
 h1 {
@@ -180,5 +181,17 @@ main {
  .product-section {
  	background-color: var(--black);
  	color: var(--offwhite);
- 	padding: 2rem ;
+ 	padding: 2rem;
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .product-section--image {
+ 	width: 400px;
+ 	padding: 0 1rem;
+ }
+
+ .product-section--block {
+ 	width: 560px;
+ 	padding: 0 1rem;
  }
