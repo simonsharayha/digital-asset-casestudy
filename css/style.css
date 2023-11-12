@@ -195,3 +195,23 @@ main {
  	width: 560px;
  	padding: 0 1rem;
  }
+
+
+ /** Story Section **/ 
+
+.story-section {
+	display: flex;
+ 	justify-content: center;
+}
+
+.story-section--image img {
+	width: 520px;
+}
+
+.story-section--block {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
