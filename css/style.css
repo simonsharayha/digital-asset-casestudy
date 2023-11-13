@@ -127,6 +127,15 @@ main {
  	display: block;
  }
 
+ 	.for-preview-story {
+ 		width:820px;
+ 	}
+
+.for-preview-morestory {
+ 		width:280px;
+ 	}
+
+
 
  /** Menu **/ 
 
