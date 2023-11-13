@@ -92,9 +92,9 @@ font-family: 'Lato', sans-serif;
 }
 
 .readmore {
-	font-size: 15;
+	font-size: 15px;
 	display: block;
-	padding: 2rem 0;
+	padding: 0px;
 	text-decoration: none;
 	color: var(--dark-blue);
 }
@@ -215,3 +215,15 @@ main {
     width: 500px;
 }
 
+.more-stories--block {
+	width:280px ;
+}
+
+.more-stories--text {
+	font-size: 15px;
+	padding-bottom:0px ;
+}
+
+.more-stories--image {
+	width: 180px;
+}
