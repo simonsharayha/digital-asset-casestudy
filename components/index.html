@@ -8,22 +8,49 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <title>Digital Asset Case Study</title>
 </head>
-<body>
+<body class="component-page">
   
-  <h1>Components | Digital Asset Case Study</h1>
-  <h2>Typography</h2>
+
+
+<div class="sidebar">
+  
+<h1 class="sidebar--title">
+            Digital Asset Case Study
+        </h1>
+        <nav class="sidebar-nav component-page--nav">
+          <section class="sidebar-nav__section">
+            <h3 class="sidebar-nav__heading">
+              <a href="#typography">Typography</a>
+            </h3>
+            <ul class="sidebar-nav__list">
+              <li><a href="#body">body</a></li>
+              <li><a href="#headings">h1, h2, h3, ...</a></li>
+              <li><a href="#links">a</a></li>
+            </ul>
+          </section>
+        </nav>
+
+
+</div>
+
+
+<div class="container component-page--main" >
+
+  <h1>Web Design System</h1>
+
+  <h2 id="typography">Typography</h2>
   
 
   <hr>
-  <h3>Body</h3>
+  <h3 id="body">Body</h3>
   <img class="for-preview" src="img/--body-text.jpg" alt="--body-text">
-  <div class="heading--block">
+  <div class="">
     <p class="heading--block--body">Digital Asset empowers the world's most innovative organizations to work across traditional boundaries with applications that enable information and value to flow freely, in a global, connected network.</p>
   
 
 
   <hr>
-  <h3>Headings (h1,h2,..)</h3>
+  <h3 id="headings">Headings (h1,h2,..)</h3>
   <img class="for-preview" src="img/--header-title.jpg" alt="h1">
   <img class="for-preview-h2" src="img/--header-h2.jpg" alt="h2">
   <img class="for-preview-pre" src="img/--pre-header.jpg" alt="preheader">
@@ -47,32 +74,47 @@
 
 <img class="for-preview-story"src="img/--nav.jpg">
 
-<header class="site-header">
+
     <div class="container">
       <a href="!#"><img class="logo" src="img/digital-asset-logo.svg"></a>
-    <nav class="site-main-navigation">
-      <ul class="menu">
-          <li class="menu-item">Use Cases
-<!--             <div class="sub-menu">
-                <div class="column">
-                  <a href="#"><i class="fa fa-pencil column-icon"></i> Clearing & Settlement</a>
-                  <a href="#"><i class="fa fa-credit-card column-icon"></i>Tokenization & Issuance</a>
-                  <a href="#"><i class="fa fa-pencil column-icon"></i>Payments</a></div>
-                <div class="column">
-                  <a href="#"><i class="fa fa-credit-card column-icon"></i>Lifecycle Management</a>
-                  <a href="#"><i class="fa fa-pencil column-icon"></i>Custody & Safekeeping</a>
-                  <a href="#"><i class="fa fa-credit-card column-icon"></i>Wagering & Gambling</a>
-                </div>
-            </div></li> --> 
-          <li class="menu-item">Products</li>
-          <li class="menu-item">Developers</li>
-          <li class="menu-item">Company</li>
-          <li class="menu-item">Partners</li>
+    <nav class="site-nav">
+      <ul class="site-nav--menu">
+          <li class="site-nav--item">Use Cases
+            <!--  <div class="site-nav--sub-menu">
+                  <div class="site-nav--column">
+                    <a href="#"><i class="fa fa-pencil site-nav--iconring & Settlement</a>
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Tokenization & Issuance</a>
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Payments</a></div>
+                  <div class="site-nav--column">
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Lifecycle Management</a>
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Custody & Safekeeping</a>
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Wagering & Gambling</a></div>
+              </div></li>  -->
+          <li class="site-nav--item">Products
+              <!-- <div class="site-nav--sub-menu-border site-nav--column">
+                  <a href="#"><img class="site-nav--img" src="components/img/daml-enterprise-logo.svg"> </a>
+                  <a href="#"><img class="site-nav--img" src="components/img/daml-hub-logo-light.svg"> </a>
+                  <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Daml Finance</a>
+                  <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Implementation Options</a>
+                  <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Customer Stories</a>
+                </div> -->
+          </li>
+          <li class="site-nav--item">Developers
+            <!-- <div class="site-nav--sub-menu site-nav--column">
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i> Clearing & Settlement</a>
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Tokenization & Issuance</a>
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Payments</a>
+            </div> -->  
+          </li>         
+          <li class="site-nav--item">Company</li>
+          <li class="site-nav--item">Partners</li>
           <li><i class="fa fa-search" aria-hidden="true"></i></li>
       </ul>
     </nav>
     </div>
-</header>
+
+
+
 <hr>
 <h3>Sub Menu</h3>
 
@@ -80,30 +122,42 @@
 
 <div class="services-container">
   <div class="service">
-    <div class="icon"><i class="fa fa-pencil column-icon"></i></div>
+    <div class="icon"><i class="fa fa-pencil site-nav--icon"></i></div>
     <div class="text">Clearing & Settlement</div>
   </div>
   <div class="service">
-    <div class="icon"><i class="fa fa-pencil column-icon"></i></div>
+    <div class="icon"><i class="fa fa-pencil site-nav--icon"></i></div>
     <div class="text">Lifecycle Management</div>
   </div>
   <div class="service">
-    <div class="icon"><i class="fa fa-pencil column-icon"></i></div>
+    <div class="icon"><i class="fa fa-pencil site-nav--icon"></i></div>
     <div class="text">Tokenization & Issuance</div>
   </div>
   <div class="service">
-    <div class="icon"><i class="fa fa-pencil column-icon"></i></div>
+    <div class="icon"><i class="fa fa-pencil site-nav--icon"></i></div>
     <div class="text">Custody & Safekeeping</div>
   </div>
   <div class="service">
-    <div class="icon"><i class="fa fa-pencil column-icon"></i></div>
+    <div class="icon"><i class="fa fa-pencil site-nav--icon"></i></div>
     <div class="text">Payments</div>
   </div>
   <div class="service">
-    <div class="icon"><i class="fa fa-pencil column-icon"></i></div>
+    <div class="icon"><i class="fa fa-pencil site-nav--icon"></i></div>
     <div class="text">Wagering & Gambling</div>
   </div>
 </div>
+
+<hr>
+
+<img class="for-preview-morestory"src="img/submenu2.jpg">
+
+    <div class="site-nav--column">
+      <a href="#"><img class="site-nav--img" src="img/daml-enterprise-logo.svg"> </a>
+      <a href="#"><img class="site-nav--img" src="img/daml-hub-logo-light.svg"> </a>
+      <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Daml Finance</a>
+      <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Implementation Options</a>
+      <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Customer Stories</a>
+    </div>
 
     <hr>
 <h3>Product Section</h3>
@@ -179,11 +233,28 @@
 </section>
 
 
+<hr>
+
+<h3>Footer section</h3>
+
+<img class="for-preview-morestory"src="img/Footer.jpg">
+
+  <div class="footer-container">
+    <div class="footer-section">
+        <a href="#" class="footer-section--logo"><img class="logo" src="img/digital-asset-logo.svg"></a>
+        <div><a href="#!" class="footer-section--social-media"><i class="fa fa-twitter"></i></a>
+        <a href="#!" class="footer-section--social-media"><i class="fa fa-linkedin"></i></a></div>
+        <a href="#!" class="footer-section--button">Learn More</a>
+        <a href="#!" class="footer--link--red-link">Warning - Phishing & Scams</a>
+        <a href="#!" class="footer--link">Privacy Policy</a>
+        <a href="#!" class="footer--link">Responsible Disclosure Policy</a>
+        <a href="#!" class="footer--link">Trademark Policy</a>
+        <a href="#!" class="footer--link--blue-link">Contact Technical Support></a>
+    </div>
+  </div>
 
 
-
-
-
+</div>
 
 
 

@@ -12,15 +12,38 @@
 
 
 <header class="site-header">
-    <div class="center flex">
+    <div class=" flex">
       <a href="!#"><img class="logo" src="components/img/digital-asset-logo.svg"></a>
-    <nav class="site-main-navigation">
-      <ul class="menu">
-          <li>Use Cases</li>
-          <li>Products</li>
-          <li>Developers</li>
-          <li>Company</li>
-          <li>Partners</li>
+    <nav class="site-nav">
+      <ul class="site-nav--menu">
+          <li class="site-nav--item">Use Cases
+             <div class="site-nav--sub-menu">
+                  <div class="site-nav--column">
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i> Clearing & Settlement</a>
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Tokenization & Issuance</a>
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Payments</a></div>
+                  <div class="site-nav--column">
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Lifecycle Management</a>
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Custody & Safekeeping</a>
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Wagering & Gambling</a></div>
+              </div></li> 
+          <li class="site-nav--item">Products
+              <div class="site-nav--sub-menu-border site-nav--column">
+                  <a href="#"><img class="site-nav--img" src="components/img/daml-enterprise-logo.svg"> </a>
+                  <a href="#"><img class="site-nav--img" src="components/img/daml-hub-logo-light.svg"> </a>
+                  <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Daml Finance</a>
+                  <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Implementation Options</a>
+                  <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Customer Stories</a>
+                </div>
+          </li>
+          <li class="site-nav--item">Developers
+            <div class="site-nav--sub-menu site-nav--column">
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i> Clearing & Settlement</a>
+                    <a href="#"><i class="fa fa-credit-card site-nav--icon"></i>Tokenization & Issuance</a>
+                    <a href="#"><i class="fa fa-pencil site-nav--icon"></i>Payments</a>
+            </div>  </li>         
+          <li class="site-nav--item">Company</li>
+          <li class="site-nav--item">Partners</li>
           <li><i class="fa fa-search" aria-hidden="true"></i></li>
       </ul>
     </nav>
@@ -187,57 +210,68 @@
 </section>
 
 
-<footer class="footer">
+<footer>
+  <div class="footer-container">
     <div class="footer-section">
-        <a href="#" class="footer-logo"><img class="logo" src="components/img/digital-asset-logo.svg"></a>
-        <a href="#!" class="button">Learn More</a>
-        <a href="#!" class="footer-link">Warning - Phishing & Scams</a>
-        <a href="#!">Privacy Policy</a>
-        <a href="#!">Responsible Disclosure Policy</a>
-        <a href="#!">Trademark Policy</a>
-        <a href="#!">Contact Technical Support></a>
-
+        
+        <a href="#" class="footer-section--logo"><img class="logo" src="components/img/digital-asset-logo.svg"></a>
+        <div><a href="#!" class="footer-section--social-media"><i class="fa fa-twitter"></i></a>
+        <a href="#!" class="footer-section--social-media"><i class="fa fa-linkedin"></i></a></div>
+        <a href="#!" class="footer-section--button">Learn More</a>
+        <a href="#!" class="footer--link--red-link">Warning - Phishing & Scams</a>
+        <a href="#!" class="footer--link">Privacy Policy</a>
+        <a href="#!" class="footer--link">Responsible Disclosure Policy</a>
+        <a href="#!" class="footer--link">Trademark Policy</a>
+        <a href="#!" class="footer--link--blue-link">Contact Technical Support></a>
     </div>
     
     <div class="footer-section">
         <h4>Use Cases</h4>
-        <ul class="hs-menu-children-wrapper">
-    <li class="footer--menu-item" >
-      <a href="https://www.digitalasset.com/use-cases/clearing-settlement" class="current-page">Clearing &amp; Settlement</a></li>
-    <li class="footer--menu-item" >
-      <a href="https://www.digitalasset.com/use-cases/tokenization" class="current-page">Tokenization &amp; Issuance</a></li>
-    <li class="footer--menu-item" >
-      <a href="https://www.digitalasset.com/use-cases/payments" class="current-page">Payments</a></li>
-    <li class="footer--menu-item" >
-      <a href="https://www.digitalasset.com/use-cases/lifecycle-management"   class="current-page">Lifecycle Management</a></li>
-    <li class="footer--menu-item" >
-      <a href="https://www.digitalasset.com/use-cases/custody-safekeeping" class="current-page">Custody &amp; Safekeeping</a></li>
-    <li class="footer--menu-item"  >
-      <a href="https://www.digitalasset.com/use-cases/wagering-gambling" class="current-page">Wagering &amp; Gambling</a></li>
-   </ul>
+          <ul class="footer-list">
+              <li class="footer--menu-item"><a href="#!">Clearing &amp; Settlement</a></li>
+              <li class="footer--menu-item"><a href="#!">Tokenization &amp; Issuance</a></li>
+              <li class="footer--menu-item"><a href="#!">Payments</a></li>
+              <li class="footer--menu-item"><a href="#!">Lifecycle Management</a></li>
+              <li class="footer--menu-item"><a href="#!">Custody &amp; Safekeeping</a></li>
+              <li class="footer--menu-item"><a href="#!">Wagering &amp; Gambling</a></li>
+          </ul>
+
+        <h4>Company</h4>
+          <ul class="footer-list">
+            <li class="footer--menu-item"><a href="#!">About</a></li>
+            <li class="footer--menu-item"><a href="#!">Global Economic Network</a></li>
+            <li class="footer--menu-item"><a href="#!">Careers</a></li>
+            <li class="footer--menu-item"><a href="#!">News</a></li>
+            <li class="footer--menu-item"><a href="#!">Blog</a></li>
+          </ul>  
     </div>
+
     
     <div class="footer-section">
-        <h4>Products</h4>
-        <!-- Add links here -->
+      <h4>Products</h4>
+        <ul class="footer-list">
+          <li class="footer--menu-item"><a href="#!">Daml Enterprise</a></li>
+          <li class="footer--menu-item"><a href="#!">Daml Hub</a></li>
+          <li class="footer--menu-item"><a href="#!">Daml Finance</a></li>
+          <li class="footer--menu-item"><a href="#!">Implementation Options</a></li>
+          <li class="footer--menu-item"><a href="#!">Customer Stories</a></li>
+        </ul>   
+
+      <h4>Our Partners</h4>
+        <h4>Become Partners</h4>
     </div>
-    
+
     <div class="footer-section">
         <h4>Developers</h4>
-        <!-- Add links here -->
+        <ul class="footer-list">
+          <li class="footer--menu-item"><a href="#!">Documentation</a></li>
+          <li class="footer--menu-item"><a href="#!">Developer Blog</a></li>
+          <li class="footer--menu-item"><a href="#!">Trust Center</a></li>
+          <li class="footer--menu-item"><a href="#!">Community</a></li>
+          <li class="footer--menu-item"><a href="#!">GitHub</a></li>
+        </ul>
     </div>
-    
-    <div class="footer-section">
-        <h4>Company</h4>
-        <!-- Add links here -->
-    </div>
-    
-    <div class="footer-section">
-        <h4>Our Partners</h4>
-        <!-- Add links here -->
-    </div>
-    
-    <!-- Add more sections as needed -->
+  </div>
 </footer>
 
 

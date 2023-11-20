@@ -3,6 +3,8 @@
 
 :root {
 	--black:#1f2a38;
+	--gray:#525252;
+	--light-gray:#e3e3e3;
 	--blue:#a6f6ff;
 	--dark-blue:#1247D9;
 	--light-blue:#577FF1;
@@ -26,12 +28,12 @@ html {
 body{
 	/*width:1200px;*/
 	/*padding: 60px 60px;*/
-	font-size: 18px;
 	line-height: 1.6em;
 }
 
 p {
 	padding-bottom: 1rem;
+	font-size: 18px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,6 +65,8 @@ font-family: 'Lato', sans-serif;
 	padding: 1rem 3rem;
 }
 
+/* COLORS */
+
 .purple{
 	background-color: var(--purple);
 }
@@ -70,6 +74,13 @@ font-family: 'Lato', sans-serif;
 .blue {
 	color: var(--blue);
 }
+
+.red {
+	color: #cc0201 !important;
+}
+
+
+
 
 .dark-section p {
 	color: var(--offwhite);
@@ -80,7 +91,7 @@ font-family: 'Lato', sans-serif;
 
 .center {
 	text-align: center;
-	    align-items: center;
+	align-items: center;
 }
 
 
@@ -93,8 +104,6 @@ font-family: 'Lato', sans-serif;
 .flex {
 	display: flex;
 	justify-content: space-between;
-
-
 }
 
 
@@ -117,7 +126,6 @@ font-family: 'Lato', sans-serif;
 }
 
 
-
 .heading--block {
 	max-width:1200px;
 	padding-left:30px;
@@ -131,6 +139,84 @@ font-family: 'Lato', sans-serif;
 	color: #525252;
 
 }
+
+
+/*  SIDE BAR */
+
+.sidebar  {
+	background-color: var(--light-gray);
+	    padding: 1rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18rem;
+}
+
+.sidebar--title {
+	font-size: 35px;
+}
+
+.component-page--main {
+	grid-area: main;
+}
+
+
+.component-page {
+    display: grid;
+    grid-template-columns: 18rem minmax(0, 1fr);
+    grid-template-areas: "header main";
+    padding-top: 0;
+}
+
+.component-page__header {
+    position: relative;
+    padding: 1rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18rem;
+}
+
+.component-page__header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: var(--gray-light);
+    z-index: 100;
+}
+
+.component-page__header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: var(--gray-light);
+    z-index: 100;
+}
+
+
+.component-page--nav {
+    display: block;
+    grid-area: nav;
+    margin-top: 1.33rem;
+}
+
+.component-page__header-container {
+    position: static;
+}
+
+
+
+
+
+
+
+
+
+
 
 .header--image {
 	max-width: 600px;
@@ -148,6 +234,21 @@ font-family: 'Lato', sans-serif;
 	text-decoration: none;
 	color:#1f2a38;
 	text-transform: uppercase;
+}
+
+.footer-section--button {
+	width: 150px;
+	background-color: #a6f6ff;
+	border:0;
+	padding: 5px 36px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	text-decoration: none;
+	color:#1f2a38;
+	text-transform: uppercase;
+}
 }
 
 .readmore {
@@ -190,6 +291,8 @@ main {
  		width:820px;
  	}
 
+
+
 .for-preview-morestory {
  		width:280px;
  	}
@@ -197,29 +300,28 @@ main {
 
  /** Menu **/ 
 
- .menu {
+ .site-nav--menu {
  	list-style: none;
     display: flex;
     font-size: 14px;
+    font-weight: 600;
  }
 
- .menu li {
- 	    font-weight: 700;
+ .site-nav--menuli {
+ 	 font-weight: 700;
  }
 
 
-
-
-.menu {
+.site-nav--menu {
   list-style-type: none;
 }
 
-.menu-item {
+.site-nav--item {
   position: relative;
   padding: 5px 25px;
 }
 
-.sub-menu {
+.site-nav--sub-menu {
   	display: none;
 	width: 460px;
     position: absolute;
@@ -232,24 +334,54 @@ main {
     padding: 7px 0;
 }
 
-.menu-item:hover .sub-menu {
-  display: grid; /* This will display the submenu in grid layout with two columns */
+
+.site-nav--sub-menu-border {
+  	display: none;
+	width: 260px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    grid-template-columns: 1fr 1fr;
+    translate: -77px;
+    background-color: #fff;
+    border: 1px solid #dae3fd;
+    padding: 0px 0;
 }
 
-.column {
+
+
+.site-nav--sub-menu-border.site-nav--column a {
+    border: 1px #cfcfcf solid;
+    width: 100%;
+    padding: 7px;
+}
+
+
+.site-nav--img {
+	height: 17px;
+}
+
+.site-nav--item:hover .site-nav--sub-menu  {
+  display: grid; 
+}
+
+.site-nav--item:hover .site-nav--sub-menu-border   {
+  display: block; 
+}
+
+.site-nav--column {
   flex-direction: column;
-  margin: 0 4px; /* Spacing between columns */
-  /* Style your columns as needed */
+  margin: 0 4px;
 }
 
-.column a {
+.site-nav--column a {
   display: block;
       padding: 2px 14px;
 
 
 }
 
-.column-icon {
+.site-nav--icon {
 	color: var(--dark-blue);
 	background-color: var(--blue);
 	border-radius: 12px;
@@ -257,6 +389,7 @@ main {
     margin-right: 10px;
 
 }
+
 
 
 
@@ -279,7 +412,7 @@ main {
 
 }
 
-.site-main-navigation {
+.site-nav {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -287,7 +420,7 @@ main {
   align-items: center;
 }
 
-.site-main-navigation a {
+.site-nav a {
   display: inline-block;
   text-decoration: none;
   color: var(--black);
@@ -353,9 +486,9 @@ main {
 }
 
 .story-section--block {
-/*	display: flex;
+	display: flex;
     flex-direction: column;
-    justify-cowntent: center;*/
+    justify-cowntent: center;	
     width: 500px;
     float: left;
     margin-left: 0;
@@ -400,42 +533,78 @@ main {
 }
 
 
-.footer {
+footer {
+	background-color: #F8F8F8;
+}
+
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2w0px;
-    background-color: #F8F8F8;
+    padding: 20px;
     color: #333;
     font-size: 14px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 80px 10px 10px 10px;
 }
 
-.footer-logo {
+.footer-section--logo {
     font-size: 24px;
     font-weight: bold;
     color: #000;
     margin-bottom: 10px;
 }
 
-.footer-link {
-    color: #007BFF;
+.footer--link--red-link {
+	color: #cc0201;
+	text-decoration: none;
+    margin-bottom: -5px;
+    padding: 20px 0 0 0;
+}
+
+.footer--link--blue-link {
+    padding: 20px 0 0 0;
+}
+
+.footer-section--social-media {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.footer--link {
+    color: var(--black);
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: -5px;
+    color:var(--gray);
+}
+
+.footer-list {
+	list-style: none;
+	padding-inline-start: 0px;
+	height: 175px;
+	margin-top: -13px;
 }
 
 .footer-link:hover {
     text-decoration: underline;
 }
 
-h4 {
-    margin-bottom: 10px;
+.footer--menu-item a {
+    color: var(--black);
+    text-decoration: none;
 }
+.footer--menu-item {
+	margin-bottom: -5px;
+}
+
+
+
 
 
 
