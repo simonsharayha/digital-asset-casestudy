@@ -145,13 +145,19 @@ font-family: 'Lato', sans-serif;
 
 .sidebar  {
 	background-color: var(--light-gray);
-	    padding: 1rem;
+	padding: 1rem;
     position: fixed;
     overflow-y: auto;
     top: 0;
     bottom: 0;
     left: 0;
     width: 18rem;
+
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: var(--gray);
 }
 
 .sidebar--title {
@@ -188,6 +194,13 @@ font-family: 'Lato', sans-serif;
     background: var(--gray-light);
     z-index: 100;
 }
+
+.sidebar-nav__list {
+	    list-style: none;
+    padding: 0;
+}
+
+
 
 .component-page__header {
     position: fixed;
