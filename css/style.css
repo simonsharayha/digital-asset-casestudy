@@ -26,8 +26,6 @@ html {
 
 
 body{
-	/*width:1200px;*/
-	/*padding: 60px 60px;*/
 	line-height: 1.6em;
 }
 
@@ -445,6 +443,7 @@ main {
 
 
 
+
 /* HERO SECTION 
 
     flex-wrap: wrap;
@@ -500,12 +499,12 @@ main {
 
 .story-section--block {
 	display: flex;
-    flex-direction: column;
-    justify-cowntent: center;	
+    flex-direction: column;	
     width: 500px;
     float: left;
     margin-left: 0;
     padding: 0 1rem;
+    margin: 8% 0;
 }
 
 .more-stories--block {
@@ -588,6 +587,7 @@ footer {
 .footer-section--social-media {
 	display: inline-block;
 	padding-right: 20px;
+	color: #bbb;
 }
 
 .footer--link {
